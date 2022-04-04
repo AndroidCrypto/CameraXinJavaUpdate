@@ -94,6 +94,9 @@ below the onCreate method:
 
 I'm for shure this can get shortened but I leave it as it is for better readability.
 
+additional note: DO NOT UPDATE androidx.camera:camera-view higher than cameraxviewVersion = "1.0.0-alpha25".
+The newer versions doesn't contain "PreviewView" and you get a lot of hassle to get the code to run again :-)
+
 ### Tutorial
 This project is a reference code made for the video 'Camera X in Java | Image Capture, Video Capture, Image Analysis'.
 

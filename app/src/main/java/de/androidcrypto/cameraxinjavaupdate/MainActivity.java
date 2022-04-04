@@ -1,5 +1,17 @@
 package de.androidcrypto.cameraxinjavaupdate;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.ContentValues;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -17,33 +29,11 @@ import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.core.content.FileProvider;
 import androidx.lifecycle.LifecycleOwner;
-
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.content.ContentValues;
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
-import android.provider.MediaStore;
-import android.util.Log;
-import android.util.Size;
-import android.view.Surface;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.common.util.concurrent.ListenableFuture;
 
-import java.io.File;
-import java.net.URI;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
